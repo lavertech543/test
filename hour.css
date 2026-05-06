@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+
+}
+
+.clock{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle,#1e293b,#020617);
+    box-shadow: 0 0 30px rgba(0,255,255,0.2);
+    inset: 0 0 20px rgba(0,255,255,0.1);
+    position: relative;
+}
+
+.center{
+    width: 12px;
+    height: 12px;
+    background: cyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px cyan;
+}
+
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: none;
+}
+
+.hour{
+    width: 6px;
+    height: 70px;
+    background: white;
+    border-radius: 10px;
+}
+
+.minute{
+    width: 4px;
+    height: 100px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+.second{
+    width: 2px;
+    height: 120px;
+    background: #f43f5e;
+}
+
+.number{
+    position: absolute;
+    color: #e2e8f0;
+    font-size: 18px;
+    font-weight: bold;
+    transform: translate(-50%,-50%);
+}
+
+/* positionnement des chiffres */
+.number1{top: 18%;left: 75%;}
+.number2{top: 30%;left: 88%;}
+.number3{top: 50%;left: 95%;}
+.number4{top: 70%;left: 88%;}
+.number5{top: 82%;left: 75%;}
+.number6{top: 90%;left: 50%;}
+.number7{top: 82%;left: 25%;}
+.number8{top: 70%;left: 12%;}
+.number9{top: 50%;left: 5%;}
+.number10{top: 30%;left: 12%;}
+.number11{top: 18%;left: 25%;}
+.number12{top: 10%;left: 50%;}
+
+.clock::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0,255,255,0.15);
+}
