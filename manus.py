@@ -1,5 +1,4 @@
 print("hello,Github")
 print("ce fichier a ete modifie")
 print(2+2)
-b=input("entrer le nom")
-print("salut",b)
+
